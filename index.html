@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", Arial, Helvetica, sans-serif;}
 body, html {
   height: 100%;
   color: #777;
@@ -66,12 +66,19 @@ body, html {
     <a href="#portfolio 1" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> PHOTOS</a>
       <a href="#portfolio 2" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-film"></i> VIDEOS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#Resume" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">RESUME</a>
+    <!-- Trigger/Open The Modal -->
+      <button id="myBtn"
+    <a href="#Resume" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"></i> RESUME  </button> </a>
+
   </div>
 </div>
-  
+
+
+  </div>
+</div>
+
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="myNavbar" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOS</a>
       <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">VIDEOS</a>
@@ -79,6 +86,7 @@ body, html {
     <a href="#Resume" class="w3-bar-item w3-button" >RESUME</a>
   </div>
 </div>
+
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -169,10 +177,176 @@ body, html {
   </div>
 </div>
 
+
+
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">I'd love your feedback</h3>
   <p class="w3-center"><em></em></p>
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: centerfixed;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #8c8c8c;
+    color: white;
+  }
+
+  .modal-body {padding: 2px 16px;}
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color:#8c8c8c;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+
+
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>S Nicholas Maloney</h2>
+      </div>
+      <div class="modal-body">
+        <h6>6391 D Smithy Sq. Glen Burnie Md, 21061 · (270) 996-9090 <br />
+   s.maloney@howardcc.edu · snicholasmaloney.github.io</h6>
+    <p></p>
+  <h3>Experience</h3>
+   <h6>OCT 2013-Present:
+   COMBAT DOCUMENTATION/ PRODUCTION SPECIALIST, US ARMY</h6>
+       <p>Combat documentation/production specialists are primarily responsible for supervising, planning and operating electronic and film-based still, video and audio acquisition equipment in order to document combat and noncombat operations.</p>
+       <p></p>
+
+       <h3>EDUCATION</h3>
+       <h6>DEC 2019:
+       GENERAL ASSOCIATES, HOWARD COUNTY COMMUNITY COLLEGE
+     </h6>
+       <h6>AUG 2008-JUNE 2011:
+  WESTERN KENTUCKY COMMUNITY COLLEGE</h6>
+
+  <h3>SKILLS</h3>
+
+  <ul>
+  <li>Adobe Creative Cloud: Premiere, After Effects, Audition, Photoshop, Illustrator, and Lightroom.</li>
+  <li>Photographer</li>
+  <li>Videographer</li>
+  <li>Audio, video and photography editing</li>
+  <li>Team leader </li>
+  <li>Critical thinker</li></ul>
+
+  <h3>ACTIVITIES</h3>
+       <p>Currently the transportation and training coordinator for the operations center at 55th Signal Company (Combat Camera). Team leader for the Joint Warfighter mission to create a promotional video for the 2019 mission. Received the Army Accommodation Medal in 2015 for my work in documenting the Idaho Army National Guard during deployment style training over a two-week period at the National Training Center in California. </p>
+
+
+      </div>
+      <div class="modal-footer">
+        <h3></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+  </body>
+  </html>
+
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-center w3-container">
@@ -182,7 +356,10 @@ body, html {
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Maryland, US<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: s.maloney@howardcc.edu<br>
       </div>
-      <p><i </i></p>
+
+
+
+
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
